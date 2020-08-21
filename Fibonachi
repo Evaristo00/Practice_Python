@@ -1,0 +1,12 @@
+def fib(number):
+  num1=0
+  num2=1
+  for i in range(number):
+    yield num1
+    temp= num1
+    num1=num2
+    num2=temp+num2
+    
+
+for i in fib(10):
+  print(i);
